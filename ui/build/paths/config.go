@@ -108,6 +108,12 @@ var Configuration = map[string]PathConfig{
 	"perl":    Allowed,
 	"pstree":  Allowed,
 	"python3": Allowed,
+	"pkg-config": Allowed,
+	"python3.6": Allowed,
+	"python3.7": Allowed,
+	"python3.8": Allowed,
+	"python3.9": Allowed,
+	"python3.10": Allowed,
 	"repo":    Allowed,
 	"rsync":   Allowed,
 	"sh":      Allowed,
@@ -121,11 +127,6 @@ var Configuration = map[string]PathConfig{
 	"arm-linux-androidkernel-as":     Allowed,
 	"arm-linux-androidkernel-ld":     Allowed,
 
-	"python3.6": Allowed,
-	"python3.7": Allowed,
-	"python3.8": Allowed,
-	"python3.9": Allowed,
-	"python3.10": Allowed,
 	"resize2fs": Allowed,
 
 	"aarch64-linux-android-addr2line":    Allowed,
@@ -216,7 +217,6 @@ var Configuration = map[string]PathConfig{
 	"ld":         Forbidden,
 	"ld.bfd":     Forbidden,
 	"ld.gold":    Forbidden,
-	"pkg-config": Allowed,
 
 	// These are toybox tools that only work on Linux.
 	"pgrep": LinuxOnlyPrebuilt,
